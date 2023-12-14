@@ -1,12 +1,5 @@
+from .models import *
+from django.shortcuts import render, redirect
 
-#from rest_framework import viewsets
-#from .models import Food, Reservation
-
-
-#class FoodViewSet(viewsets.ModelViewSet):
- #   queryset = Food.objects.all()
-
-
-#class ReservationViewSet(viewsets.ModelViewSet):
- #   queryset = Reservation.objects.all()
-
+def home(request):
+    return render(request, "index.html")

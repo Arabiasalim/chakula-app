@@ -1,8 +1,11 @@
 from django.db import models
 
-class Food(models.Model):
+class message(models.Model):
     name = models.CharField(max_length=255)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    email = models.EmailField(max_length=150)
+    subject = models.CharField(max_length=255)
+    description = models.CharField(max_length=200)
+
 
 class Reservation(models.Model):
     username = models.CharField(max_length=255)
